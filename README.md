@@ -6,6 +6,6 @@ AdazolHUB
 
 Rock paper scissors game created with HTML, CSS (tailwindcss) and Javascript.
 
-[Live Demo]() 🍃
+[Live Demo](https://adazol123.github.io/rock_paper_scissor) 🍃
 
 ### Author: [Daniel Lozada](https://github.com/adazol123)
