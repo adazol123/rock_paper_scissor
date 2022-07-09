@@ -65,7 +65,7 @@ function handleClick(playerSelection) {
       modalResultText.classList.remove("text-rose-400");
       modalResultText.textContent = "Congrats! You win against machine.";
       return (resultFinalText.textContent =
-        "Awesome, you beat me there! hope to play with you again next time. my robotic hand is gliching. haha");
+        "Awesome, you beat me there! hope to play with you again next time. my robotic hand is glitching. haha");
     } else if (playerScore < computerScore) {
       resetGame();
       modal.classList.remove("disabled");
