@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adazolhob | TOS - Rock, Paper or Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-slate-700 to-neutral-800 text-gray-200">
+    <div class="py-8">
+        <h1 class="text-lg text-center">Rock, Paper or Scissor</h1>
+        <p class="text-xs text-center text-gray-400">Adazolhub | TOS</p>
+        <p></p>
+    </div>
+    <section class="grid place-content-center min-h-[calc(100vh-9.7em)]">
+        <div class=" w-full space-y-4">
+            <p class="text-center">
+            <span class="text-6xl">🤖</span>
+        </p>
+        <div class="">
+            <p class="text-center p-4 text-3xl border rounded-md w-fit mx-auto rotate-180 w-[2.5em] h-[2.5em]" id="robotic-hand">
+                
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-4 justify-center p-4 border border-dashed rounded-md my-4 border-gray-400 text-gray-400 text-xs">
+            <div class="inline-flex gap-2">
+                <p>Round count</p>
+                <p id="round_counts" class="text-gray-200">0</p>
+            </div>
+            <div class="inline-flex gap-2">
+                <p>Round result</p>
+                <p id="round_result" class="text-gray-200">win</p>
+            </div>
+        </div>
+    
+        <div class="flex p-4 gap-4 justify-center text-gray-400">
+            <div class="flex gap-2">
+                <p>Player</p>
+                <p id="player_score" class="text-gray-200 text-emerald-400">0</p>
+            </div>
+            <div class="flex gap-2">
+                <p>Computer</p>
+                <p id="computer_score" class="text-gray-200 text-rose-400">0</p>
+            </div>
+    
+        </div>
+        <div class="flex justify-center gap-2">
+            <button class="rock border border-gray-500/60 rounded p-4 text-3xl bg-gray-800/40 ">✊</button>
+            <button class="paper border border-gray-500/60 rounded p-4 text-3xl bg-gray-800/40 ">✋</button>
+            <button  class="scissor border border-gray-500/60 rounded p-4 text-3xl bg-gray-800/40 ">✌️</button>
+        </div>
+    </section>
+    <div id="modal" class="disabled fixed grid place-content-center w-[100%] h-[100%] top-0">
+        <div id="modal-backdrop" class="disabled bg-gray-700 w-full h-full absolute opacity-80 z-40 flex justify-center pt-24 transition-all cursor-pointer text-gray-500 backdrop-blur-sm">
+
+            Close
+        </div>
+
+
+        <div id="modal-content" class="bg-gray-600 text-gray-300 rounded-md z-50 px-4 md:px-12 py-8 md:py-16 w-[80%] min-h-[10em] mx-auto drop-shadow-md  transition-all ">
+            <p id="modal-result" class="text-center text-lg font-bold mb-4 "></p>
+            <div class="flex items-start gap-2 text-base">
+                <span class="whitespace-nowrap ">🤖 :</span>
+                <p id="result_final" class="text-gray-300/80">Hmmm, seem you need more practice predicting on what hand an I going to use next.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="text-xs text-gray-400/50 text-center py-4">
+       Copyright © 2022 | AdazolHUB • The Odin Project 
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
